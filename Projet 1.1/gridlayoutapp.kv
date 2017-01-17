@@ -1,0 +1,100 @@
+<SampleGridLayout>:
+    id: calculator
+    display: entry    
+    cols: 1
+    rows: 2
+    spacing: 10
+    padding: 10
+
+    BoxLayout:
+        orientation: "horizontal"
+        size_hint_x: 1
+        spacing: 10
+        
+        Button:
+            text: "Vue system"
+            size_hint_x: .85
+
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_x: 0.15
+
+            Button:
+                text: "Prod 1"
+                background_color: (1, 0, 0, 1)
+                size_hint: 1, 0.333
+                on_press: entry.text = self.text
+                on_press: root.set_title_prod(self.text)
+          
+
+            Button:
+                text: "Prod 2"
+                background_color: (0, 1, 0, 1)
+                size_hint: 1, 0.333
+                on_press: entry.text = self.text
+                on_press: root.set_title_prod(self.text)
+
+            Button:
+                text: "Prod 3"
+                background_color: (0, 0, 1, 1)
+                size_hint: 1, 0.333
+                on_press: entry.text = self.text
+                on_press: root.set_title_prod(self.text)
+
+
+    BoxLayout:
+        id: entry
+        orientation: "horizontal"
+        size_hint_x: 1
+        
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_x: 0.15
+        
+            Button:
+                text: "Poste 1"
+                background_color: (.62, .45, .41, 1)
+                size_hint: 1, 0.333
+                on_press: entry.text = self.text
+                on_press: root.set_title_poste(self.text)
+                
+            Button:
+                text: "Poste 2"
+                background_color: (.62, .45, .41, 1)
+                size_hint: 1, 0.333
+                on_press: entry.text = self.text
+                on_press: root.set_title_poste(self.text)
+
+            Button:
+                text: "Poste 3"
+                background_color: (.62, .45, .41, 1)
+                size_hint: 1, 0.333
+                on_press: entry.text = self.text
+                on_press: root.set_title_poste(self.text)
+
+
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_x: 0.7
+        
+
+
+        
+        BoxLayout:
+            orientation: "vertical"
+            size_hint_x: 0.15
+        
+            Button:
+                text: "Navette 1"
+                size_hint: 1, 0.333
+
+            Button:
+                text: "Navette 2"
+                size_hint: 1, 0.333
+
+            Button:
+                text: "Navette 3"
+                size_hint: 1, 0.333
+       
+
+   
